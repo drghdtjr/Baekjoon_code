@@ -1,0 +1,11 @@
+num=int(input())
+count=0
+trans_num=num
+while(1):
+    before_num=num//10+num%10
+    after_num=(num%10)*10+before_num%10
+    count=count+1
+    num=after_num
+    if(after_num==trans_num):
+        break
+print(count)
